@@ -79,13 +79,6 @@ public class TradeInfo {
 
     public String getTradeInfoData(){
         String result = "MerchantID=" + this.MerchantID + "&" +
-                "TimeStamp=" + this.TimeStamp + "&" +
-                "Version=" + this.Version + "&RespondType=Stri" +
-                "ng&MerchantOrderNo=Vanespl_ec_1663040304&Amt=30&NotifyURL=https%3A%2F%2" +
-                "Fwebhook.site%2Fd4db5ad1-2278-466a-9d66-" +
-                "78585c0dbadb&ReturnURL=&ItemDesc=test";
-        /*
-        String result = "MerchantID=" + this.MerchantID + "&" +
                 "RespondType=" + this.RespondType + "&" +
                 "TimeStamp=" + this.TimeStamp + "&" +
                 "Version=" + this.Version + "&" +
@@ -98,9 +91,6 @@ public class TradeInfo {
                 "OrderComment=" + this.OrderComment + "&" +
                 "VACC=" + paymentState(this.VACC) + "&" +
                 "CVS=" + paymentState(this.CVS);
-
-         */
-
         return result;
     }
 

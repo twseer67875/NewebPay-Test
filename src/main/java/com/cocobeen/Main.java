@@ -24,8 +24,6 @@ public class Main {
                 "TradeInfo=" + data.getTradeInfo() + "&" +
                 "TradeSha=" + data.getTradeSha();
 
-        System.out.println(requestBody);
-
         RequestBody body = RequestBody.create(mediaType, requestBody);
 
         Request request = new Request.Builder()
@@ -35,7 +33,6 @@ public class Main {
 
         try {
             Response response = client.newCall(request).execute();
-            System.out.println("Response: " + response.body().string());
             if (response.isSuccessful()) {
                 String responseBody = response.body().string();
                 System.out.println("Response: " + responseBody);
